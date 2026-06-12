@@ -1,6 +1,24 @@
 # Batch Print Kit
 
+[![Tests](https://github.com/lihongyu5432-ux/BatchPrintKit/actions/workflows/test.yml/badge.svg)](https://github.com/lihongyu5432-ux/BatchPrintKit/actions/workflows/test.yml)
+[![Release](https://img.shields.io/github/v/release/lihongyu5432-ux/BatchPrintKit)](https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+English | [简体中文](README.zh-CN.md)
+
 Batch Print Kit is a small open-source Windows desktop and command line tool for building and running batch print jobs.
+
+![Batch Print Kit desktop screenshot](docs/images/screenshot-main.png)
+
+## Why
+
+Windows can print one file easily, but printing a mixed pile of PDFs, Office documents, images, and folders is still awkward. Batch Print Kit gives that workflow a small queue-based desktop app:
+
+- select many files/folders from Explorer
+- review the exact queue before printing
+- choose the real printer instead of WPS PDF / Microsoft Print to PDF by accident
+- open the selected printer driver's own settings page for paper, grayscale, quality, duplex, and trays
+- print PDFs through bundled SumatraPDF when installed
 
 It helps you:
 
@@ -19,7 +37,11 @@ The project is intentionally dependency-light and works with the Python standard
 
 ## Download
 
-For normal Windows users, download the latest `BatchPrintKit.zip` from GitHub Releases, unzip it, and run:
+For normal Windows users, download the latest Windows zip from GitHub Releases:
+
+[Download BatchPrintKit-v0.2.0-win64.zip](https://github.com/lihongyu5432-ux/BatchPrintKit/releases/download/v0.2.0/BatchPrintKit-v0.2.0-win64.zip)
+
+Unzip it and run:
 
 ```text
 BatchPrintKit.exe
@@ -72,6 +94,10 @@ powershell -ExecutionPolicy Bypass -File scripts\install_sumatra_pdf.ps1
 
 Then select files/folders in Windows Explorer, right-click, and choose `用批量打印工具打开`.
 The desktop app can also import many files directly.
+
+## Good fit
+
+Batch Print Kit is useful for small offices, warehouses, schools, stores, and anyone who repeatedly prints folders of PDFs, spreadsheets, labels, images, or order documents on Windows.
 
 CLI plan:
 
