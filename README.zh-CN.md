@@ -11,7 +11,7 @@
 [产品页](https://lihongyu5432-ux.github.io/BatchPrintKit/) · [下载](https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest) · [反馈](https://github.com/lihongyu5432-ux/BatchPrintKit/issues)
 
 ![批量打印工具主界面](docs/images/screenshot-main.png)
-
+![Batch Print Kit demo](docs/images/BatchPrintKit-demo.gif)
 ![批量打印流程](docs/images/demo-flow.png)
 
 ## 适合谁
