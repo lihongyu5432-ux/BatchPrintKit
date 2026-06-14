@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Batch Print Kit - Open-source Windows batch printing tool</title>
+    <meta name="description" content="Batch Print Kit is an open-source Windows batch printing tool with queue review, Explorer integration, printer-driver settings, and PDF printing via SumatraPDF.">
+    <meta name="keywords" content="Windows batch printing, batch print, PDF printing, printer settings, Explorer context menu, SumatraPDF, open source printing tool">
+    <meta property="og:title" content="Batch Print Kit">
+    <meta property="og:description" content="Open-source Windows batch printing with queue review, Explorer integration, and real printer-driver settings.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lihongyu5432-ux.github.io/BatchPrintKit/images/screenshot-main.png">
+    <meta property="og:url" content="https://lihongyu5432-ux.github.io/BatchPrintKit/">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17202a;
+        --muted: #586575;
+        --line: #d8dee8;
+        --panel: #f6f8fb;
+        --brand: #2563eb;
+        --brand-dark: #1e40af;
+        --ok: #0f766e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: #ffffff;
+        line-height: 1.55;
+      }
+
+      a {
+        color: var(--brand);
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.94);
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        min-height: 64px;
+      }
+
+      .brand {
+        font-weight: 750;
+        font-size: 18px;
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 70px 0 44px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.15fr);
+        gap: 40px;
+        align-items: center;
+      }
+
+      .eyebrow {
+        color: var(--ok);
+        font-weight: 700;
+        margin: 0 0 12px;
+      }
+
+      h1 {
+        font-size: clamp(42px, 6vw, 72px);
+        line-height: 1.02;
+        letter-spacing: 0;
+        margin: 0 0 18px;
+      }
+
+      .lead {
+        font-size: 19px;
+        color: var(--muted);
+        max-width: 680px;
+        margin: 0 0 28px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: 6px;
+        border: 1px solid var(--line);
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--ink);
+        background: #fff;
+      }
+
+      .button.primary {
+        background: var(--brand);
+        color: #fff;
+        border-color: var(--brand);
+      }
+
+      .button.primary:hover {
+        background: var(--brand-dark);
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .screenshot {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: 0 20px 60px rgba(15, 23, 42, 0.16);
+        width: 100%;
+        display: block;
+      }
+
+      section {
+        padding: 52px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      h2 {
+        font-size: 30px;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .feature {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        background: #fff;
+      }
+
+      .feature h3 {
+        margin: 0 0 8px;
+        font-size: 17px;
+      }
+
+      .feature p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .band {
+        background: var(--panel);
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        counter-reset: steps;
+      }
+
+      .step {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        counter-increment: steps;
+      }
+
+      .step::before {
+        content: counter(steps);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        color: #fff;
+        background: var(--brand);
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+
+      .step h3 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
+
+      .step p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 30px;
+      }
+
+      .code {
+        background: #101827;
+        color: #e5eefb;
+        border-radius: 8px;
+        padding: 18px;
+        overflow-x: auto;
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+        font-size: 14px;
+      }
+
+      footer {
+        padding: 34px 0;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+      }
+
+      @media (max-width: 900px) {
+        .hero-grid,
+        .split {
+          grid-template-columns: 1fr;
+        }
+
+        .feature-grid,
+        .steps {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .hero {
+          padding-top: 42px;
+        }
+
+        nav {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 14px 0;
+        }
+
+        .feature-grid,
+        .steps {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <a class="brand" href="./">Batch Print Kit</a>
+          <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#download">Download</a>
+            <a href="README.zh-CN.md">简体中文</a>
+            <a href="https://github.com/lihongyu5432-ux/BatchPrintKit">GitHub</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="eyebrow">Open source · Windows · MIT licensed</p>
+            <h1>Batch printing without losing the queue.</h1>
+            <p class="lead">Batch Print Kit helps Windows users collect files and folders into a reviewable print queue, choose the real printer, open printer-driver settings, and print PDFs through SumatraPDF when installed.</p>
+            <div class="actions">
+              <a class="button primary" href="https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest">Download for Windows</a>
+              <a class="button" href="https://github.com/lihongyu5432-ux/BatchPrintKit">View on GitHub</a>
+            </div>
+            <p class="note">No account required. Download the zip, unzip it, and run <strong>BatchPrintKit.exe</strong>.</p>
+          </div>
+          <img class="screenshot" src="images/screenshot-main.png" alt="Batch Print Kit desktop app showing printer selection, queue table, and print controls">
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="wrap">
+          <h2>Built for boring, real printing work</h2>
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Review before printing</h3>
+              <p>Scan folders or import files, then clean the exact queue before sending anything to the printer.</p>
+            </div>
+            <div class="feature">
+              <h3>Explorer integration</h3>
+              <p>Select files and folders in Windows Explorer and open them with Batch Print Kit.</p>
+            </div>
+            <div class="feature">
+              <h3>Real printer selection</h3>
+              <p>Choose a physical printer and avoid accidentally routing documents to WPS PDF or Microsoft Print to PDF.</p>
+            </div>
+            <div class="feature">
+              <h3>Driver settings</h3>
+              <p>The Printer Settings button opens the selected printer driver's own preferences page.</p>
+            </div>
+            <div class="feature">
+              <h3>PDF-first backend</h3>
+              <p>Use portable SumatraPDF for PDF printing when installed, reducing default-app surprises.</p>
+            </div>
+            <div class="feature">
+              <h3>CLI included</h3>
+              <p>Keep a dry-run command-line workflow for safer automation and repeatable batches.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>How it works</h2>
+          <div class="steps">
+            <div class="step">
+              <h3>Select files</h3>
+              <p>Use Explorer, a folder scan, or the import button.</p>
+            </div>
+            <div class="step">
+              <h3>Review queue</h3>
+              <p>Confirm every file before printing starts.</p>
+            </div>
+            <div class="step">
+              <h3>Choose printer</h3>
+              <p>Pick the real device and open driver settings if needed.</p>
+            </div>
+            <div class="step">
+              <h3>Print</h3>
+              <p>Submit the batch only after explicit confirmation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download">
+        <div class="wrap split">
+          <div>
+            <h2>Download</h2>
+            <p>Download the latest Windows release from GitHub, unzip it, and run the executable.</p>
+            <p><a class="button primary" href="https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest">Latest release</a></p>
+          </div>
+          <div>
+            <h2>Build from source</h2>
+            <pre class="code">git clone https://github.com/lihongyu5432-ux/BatchPrintKit.git
+cd BatchPrintKit
+python -m pip install -e .
+batch-print-gui</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>Batch Print Kit is open source under the MIT License. Real printer compatibility reports are welcome on GitHub Issues.</p>
+      </div>
+    </footer>
+  </body>
+</html>

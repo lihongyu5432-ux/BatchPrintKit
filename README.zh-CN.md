@@ -8,6 +8,8 @@
 
 一个开源的 Windows 批量打印工具，支持桌面界面、右键菜单、打印机选择、队列预览和 PDF 优先打印。
 
+[产品页](https://lihongyu5432-ux.github.io/BatchPrintKit/) · [下载](https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest) · [反馈](https://github.com/lihongyu5432-ux/BatchPrintKit/issues)
+
 ![批量打印工具主界面](docs/images/screenshot-main.png)
 
 ## 适合谁

@@ -8,6 +8,8 @@ English | [简体中文](README.zh-CN.md)
 
 Batch Print Kit is a small open-source Windows desktop and command line tool for building and running batch print jobs.
 
+[Product page](https://lihongyu5432-ux.github.io/BatchPrintKit/) · [Download](https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest) · [Feedback](https://github.com/lihongyu5432-ux/BatchPrintKit/issues)
+
 ![Batch Print Kit desktop screenshot](docs/images/screenshot-main.png)
 
 ## Why

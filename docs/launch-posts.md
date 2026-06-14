@@ -18,7 +18,7 @@ Show HN: Batch Print Kit – an open-source Windows batch printing tool
 URL:
 
 ```text
-https://github.com/lihongyu5432-ux/BatchPrintKit
+https://lihongyu5432-ux.github.io/BatchPrintKit/
 ```
 
 Optional first comment:
@@ -54,7 +54,7 @@ Open-source Windows batch printing with queue review and Explorer integration.
 Website:
 
 ```text
-https://github.com/lihongyu5432-ux/BatchPrintKit
+https://lihongyu5432-ux.github.io/BatchPrintKit/
 ```
 
 Description:
