@@ -99,6 +99,17 @@ The desktop app can also import many files directly.
 
 Batch Print Kit is useful for small offices, warehouses, schools, stores, and anyone who repeatedly prints folders of PDFs, spreadsheets, labels, images, or order documents on Windows.
 
+## Feedback Wanted
+
+Real printer setups vary a lot. If Batch Print Kit works for your printer, or if a specific file type fails, please open an issue with:
+
+- Windows version
+- printer model
+- file type
+- whether PDF printing used SumatraPDF
+
+Stars are appreciated if the tool saves you a little time.
+
 CLI plan:
 
 
