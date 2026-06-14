@@ -17,6 +17,7 @@
 - `sitemap.xml`
 - `llms.txt`
 - IndexNow key 文件和提交脚本
+- IndexNow 已提交产品页、llms.txt、sitemap.xml
 - TechRitual 目录站投稿资料
 
 ## 链接

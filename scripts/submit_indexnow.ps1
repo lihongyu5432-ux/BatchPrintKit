@@ -6,8 +6,7 @@ $body = @{
     urlList = @(
         "https://lihongyu5432-ux.github.io/BatchPrintKit/",
         "https://lihongyu5432-ux.github.io/BatchPrintKit/llms.txt",
-        "https://github.com/lihongyu5432-ux/BatchPrintKit",
-        "https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest"
+        "https://lihongyu5432-ux.github.io/BatchPrintKit/sitemap.xml"
     )
 } | ConvertTo-Json -Depth 5
 Invoke-RestMethod -Uri "https://api.indexnow.org/indexnow" -Method Post -Body $body -ContentType "application/json"
