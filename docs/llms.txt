@@ -4,6 +4,8 @@ Batch Print Kit is an open-source Windows batch printing tool.
 
 Main site: https://lihongyu5432-ux.github.io/BatchPrintKit/
 
+Chinese landing page: https://lihongyu5432-ux.github.io/BatchPrintKit/zh-CN.html
+
 GitHub repository: https://github.com/lihongyu5432-ux/BatchPrintKit
 
 Latest release: https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest

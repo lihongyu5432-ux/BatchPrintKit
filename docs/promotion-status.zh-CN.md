@@ -10,6 +10,7 @@
 - README 英文/中文说明
 - 主界面截图
 - 社交分享卡片
+- 批量打印流程图
 - GitHub topics
 - GitHub issue 模板
 - 公开反馈 issue
@@ -31,6 +32,7 @@
 - GitHub：https://github.com/lihongyu5432-ux/BatchPrintKit
 - Release：https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest
 - 社交卡片：https://lihongyu5432-ux.github.io/BatchPrintKit/images/social-card.png
+- 流程图：https://lihongyu5432-ux.github.io/BatchPrintKit/images/demo-flow.png
 - 发布稿：https://github.com/lihongyu5432-ux/BatchPrintKit/blob/main/docs/launch-posts.md
 - Scoop manifest：https://github.com/lihongyu5432-ux/BatchPrintKit/blob/main/packaging/scoop/batch-print-kit.json
 - Scoop bucket：https://github.com/lihongyu5432-ux/scoop-bucket

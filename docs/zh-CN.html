@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Batch Print Kit 批量打印工具</title>
+    <meta name="description" content="开源 Windows 批量打印工具，支持队列检查、右键导入、真实打印机选择、打印机驱动设置和 SumatraPDF PDF 打印。">
+    <link rel="canonical" href="https://lihongyu5432-ux.github.io/BatchPrintKit/zh-CN.html">
+    <style>
+      body { margin: 0; font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif; color: #17202a; background: #fff; line-height: 1.65; }
+      a { color: #2563eb; }
+      .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+      header { border-bottom: 1px solid #d8dee8; }
+      nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      nav a { text-decoration: none; }
+      .brand { font-weight: 800; color: #17202a; }
+      .links { display: flex; gap: 16px; flex-wrap: wrap; }
+      .hero { padding: 64px 0 44px; }
+      h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.08; margin: 0 0 18px; letter-spacing: 0; }
+      .lead { font-size: 19px; color: #586575; max-width: 760px; margin-bottom: 26px; }
+      .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+      .button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 6px; border: 1px solid #d8dee8; text-decoration: none; font-weight: 700; color: #17202a; }
+      .primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+      img { max-width: 100%; border: 1px solid #d8dee8; border-radius: 8px; display: block; margin: 24px 0; }
+      section { padding: 44px 0; border-top: 1px solid #d8dee8; }
+      .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .card { border: 1px solid #d8dee8; border-radius: 8px; padding: 18px; }
+      .card h3 { margin: 0 0 8px; }
+      .card p { margin: 0; color: #586575; }
+      pre { background: #101827; color: #e5eefb; border-radius: 8px; padding: 18px; overflow-x: auto; }
+      footer { border-top: 1px solid #d8dee8; padding: 30px 0; color: #586575; }
+      @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } nav { align-items: flex-start; flex-direction: column; padding: 14px 0; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <a class="brand" href="zh-CN.html">Batch Print Kit 批量打印工具</a>
+          <div class="links">
+            <a href="./">English</a>
+            <a href="https://github.com/lihongyu5432-ux/BatchPrintKit">GitHub</a>
+            <a href="https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest">下载</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <h1>先检查队列，再批量打印。</h1>
+          <p class="lead">Batch Print Kit 是一个开源 Windows 批量打印工具。它可以把多个文件和文件夹放进可检查的打印队列，选择真实打印机，打开打印机驱动设置，并优先用 SumatraPDF 处理 PDF。</p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest">下载 Windows 版本</a>
+            <a class="button" href="https://github.com/lihongyu5432-ux/BatchPrintKit">查看源码</a>
+          </div>
+          <img src="images/screenshot-main.png" alt="Batch Print Kit 主界面">
+        </div>
+      </section>
+      <section>
+        <div class="wrap">
+          <h2>适合这些场景</h2>
+          <div class="grid">
+            <div class="card"><h3>办公室资料</h3><p>批量打印 PDF、Word、Excel、图片和资料文件夹。</p></div>
+            <div class="card"><h3>仓库/门店</h3><p>打印订单、标签、表格前先检查队列，减少误打。</p></div>
+            <div class="card"><h3>学校/培训</h3><p>把资料包集中到队列里，确认后一次提交。</p></div>
+          </div>
+          <img src="images/demo-flow.png" alt="Batch Print Kit 批量打印流程">
+        </div>
+      </section>
+      <section>
+        <div class="wrap">
+          <h2>安装</h2>
+          <p>普通用户下载 Release 压缩包，解压后运行 <strong>BatchPrintKit.exe</strong>。</p>
+          <p>Scoop 用户可以这样安装：</p>
+          <pre>scoop bucket add lihongyu https://github.com/lihongyu5432-ux/scoop-bucket
+scoop install batch-print-kit</pre>
+        </div>
+      </section>
+    </main>
+    <footer><div class="wrap">MIT 开源。欢迎真实打印机兼容性反馈。</div></footer>
+  </body>
+</html>

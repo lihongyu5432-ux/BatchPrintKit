@@ -12,6 +12,8 @@
 
 ![批量打印工具主界面](docs/images/screenshot-main.png)
 
+![批量打印流程](docs/images/demo-flow.png)
+
 ## 适合谁
 
 适合经常在 Windows 上批量打印文件的人：
