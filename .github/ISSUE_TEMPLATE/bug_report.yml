@@ -1,0 +1,50 @@
+name: Bug report
+description: Report a problem with Batch Print Kit.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      placeholder: Describe what you expected and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Batch Print Kit version
+      placeholder: v0.2.0
+    validations:
+      required: false
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: false
+  - type: input
+    id: printer-model
+    attributes:
+      label: Printer model
+      placeholder: EPSON L1250 Series
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Batch Print Kit
+        2. Import ...
+        3. Click ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error logs or screenshots
+      description: If the app wrote an error log, include the relevant text from `%TEMP%\BatchPrintKit-error.log`.
+    validations:
+      required: false

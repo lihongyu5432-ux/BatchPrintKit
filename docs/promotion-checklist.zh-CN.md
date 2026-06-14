@@ -9,12 +9,17 @@
 
 2. V2EX / 开发者社区
    - 标题：`做了一个开源 Windows 批量打印工具，支持右键选中文件夹后统一打印`
-   - 正文用 `V2EX / 开发者社区正文` 版本。
+   - 正文用 `docs/launch-posts.md` 里的 Chinese Communities 版本。
    - 重点说清楚：这是早期版本，欢迎真实打印机反馈。
 
 3. GitHub
    - 确认 README 有截图、中文说明、Release 下载入口。
    - 确认 topics 已设置：`windows`, `printing`, `batch-printing`, `printer`, `desktop-app`, `python`, `pdf`。
+
+4. Hacker News / Product Hunt / Reddit
+   - 发布稿统一放在 `docs/launch-posts.md`。
+   - 不要请求别人 upvote，只邀请试用和反馈。
+   - Reddit 使用 Promotional flair，并且发布后要留在评论区交流。
 
 ## 第二轮：拿到反馈后再发
 

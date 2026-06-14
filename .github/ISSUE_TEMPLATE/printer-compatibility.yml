@@ -1,0 +1,48 @@
+name: Printer compatibility report
+description: Report whether Batch Print Kit works with your printer setup.
+title: "[Printer] "
+labels: ["printer-compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Batch Print Kit with a real printer. Printer drivers and Windows setups vary a lot, so these reports are very useful.
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: input
+    id: printer-model
+    attributes:
+      label: Printer model
+      placeholder: EPSON L1250 Series
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Works
+        - Partially works
+        - Does not work
+    validations:
+      required: true
+  - type: textarea
+    id: file-types
+    attributes:
+      label: File types tested
+      description: Tell us what you printed.
+      placeholder: PDF, DOCX, XLSX, PNG
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Include whether SumatraPDF was used, what happened, and any error text or screenshots.
+    validations:
+      required: false
