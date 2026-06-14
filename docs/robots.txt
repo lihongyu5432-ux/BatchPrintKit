@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lihongyu5432-ux.github.io/BatchPrintKit/sitemap.xml

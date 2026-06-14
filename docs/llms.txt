@@ -1,0 +1,29 @@
+# Batch Print Kit
+
+Batch Print Kit is an open-source Windows batch printing tool.
+
+Main site: https://lihongyu5432-ux.github.io/BatchPrintKit/
+
+GitHub repository: https://github.com/lihongyu5432-ux/BatchPrintKit
+
+Latest release: https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest
+
+## Summary
+
+Batch Print Kit helps Windows users collect files and folders into a reviewable print queue before printing. It is useful for offices, warehouses, stores, schools, and anyone printing folders of PDFs, Office documents, labels, order files, or images.
+
+## Core features
+
+- Tkinter desktop UI
+- Windows Explorer integration
+- Multi-file import and folder scanning
+- Queue review before printing
+- Printer selection
+- Opens the selected printer driver's own settings page
+- Optional SumatraPDF backend for PDF printing
+- CLI with dry-run behavior
+- MIT license
+
+## Important caveat
+
+PDF printing can use SumatraPDF when installed. Office formats still depend on the Windows registered application and printer driver.
