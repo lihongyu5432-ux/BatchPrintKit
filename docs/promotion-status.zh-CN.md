@@ -19,6 +19,8 @@
 - IndexNow key 文件和提交脚本
 - IndexNow 已提交产品页、llms.txt、sitemap.xml
 - TechRitual 目录站投稿资料
+- Scoop manifest
+- WinGet manifest 草案
 
 ## 链接
 
@@ -27,6 +29,7 @@
 - Release：https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest
 - 社交卡片：https://lihongyu5432-ux.github.io/BatchPrintKit/images/social-card.png
 - 发布稿：https://github.com/lihongyu5432-ux/BatchPrintKit/blob/main/docs/launch-posts.md
+- Scoop manifest：https://github.com/lihongyu5432-ux/BatchPrintKit/blob/main/packaging/scoop/batch-print-kit.json
 
 ## 外部渠道状态
 

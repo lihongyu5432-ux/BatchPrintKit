@@ -49,6 +49,12 @@ Unzip it and run:
 BatchPrintKit.exe
 ```
 
+Scoop users can install from this repository manifest:
+
+```powershell
+scoop install https://raw.githubusercontent.com/lihongyu5432-ux/BatchPrintKit/main/packaging/scoop/batch-print-kit.json
+```
+
 ## Install from source
 
 ```powershell

@@ -44,6 +44,12 @@
 BatchPrintKit.exe
 ```
 
+如果你使用 Scoop，也可以直接安装仓库里的 manifest：
+
+```powershell
+scoop install https://raw.githubusercontent.com/lihongyu5432-ux/BatchPrintKit/main/packaging/scoop/batch-print-kit.json
+```
+
 ## 从源码运行
 
 ```powershell
