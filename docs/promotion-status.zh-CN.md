@@ -23,6 +23,7 @@
 - WinGet manifest 草案
 - WinGet 官方仓库 PR：https://github.com/microsoft/winget-pkgs/pull/387761
 - Scoop Extras 官方仓库 PR：https://github.com/ScoopInstaller/Extras/pull/18041
+- 自有 Scoop bucket：https://github.com/lihongyu5432-ux/scoop-bucket
 
 ## 链接
 
@@ -32,6 +33,7 @@
 - 社交卡片：https://lihongyu5432-ux.github.io/BatchPrintKit/images/social-card.png
 - 发布稿：https://github.com/lihongyu5432-ux/BatchPrintKit/blob/main/docs/launch-posts.md
 - Scoop manifest：https://github.com/lihongyu5432-ux/BatchPrintKit/blob/main/packaging/scoop/batch-print-kit.json
+- Scoop bucket：https://github.com/lihongyu5432-ux/scoop-bucket
 
 ## 外部渠道状态
 
@@ -44,6 +46,7 @@
 | TechRitual Startups | 投稿资料已准备 | 自动化访问被 Cloudflare 拦截，不绕过 |
 | WinGet | PR 已提交 | https://github.com/microsoft/winget-pkgs/pull/387761 |
 | Scoop Extras | PR 已提交 | https://github.com/ScoopInstaller/Extras/pull/18041 |
+| 自有 Scoop bucket | 已发布 | `scoop bucket add lihongyu https://github.com/lihongyu5432-ux/scoop-bucket` |
 | 搜索引擎 | 已准备抓取入口 | Pages、robots、sitemap、llms、IndexNow |
 
 ## 合规边界
