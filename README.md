@@ -11,7 +11,7 @@ Batch Print Kit is a small open-source Windows desktop and command line tool for
 [Product page](https://lihongyu5432-ux.github.io/BatchPrintKit/) · [Download](https://github.com/lihongyu5432-ux/BatchPrintKit/releases/latest) · [Feedback](https://github.com/lihongyu5432-ux/BatchPrintKit/issues)
 
 ![Batch Print Kit desktop screenshot](docs/images/screenshot-main.png)
-
+![Batch Print Kit demo](docs/images/BatchPrintKit-demo.gif)
 ## Why
 
 Windows can print one file easily, but printing a mixed pile of PDFs, Office documents, images, and folders is still awkward. Batch Print Kit gives that workflow a small queue-based desktop app:
